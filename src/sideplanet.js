@@ -36,7 +36,7 @@ const Sidepla = () => {
         </div>
         <div className="d-flex justify-content-between align-items-center">
           <p className="mb-0">Characters</p>
-          <button className="bg-secondary btn">+</button>
+          <button className="bg-light btn">+</button>
         </div>
         <div className="d-flex align-items-center mb-3">
           <img

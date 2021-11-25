@@ -46,7 +46,7 @@ const App = () => {
         <div className={`side col-5 col-md-4 bg-white`}>
           <button
             onClick={close}
-            className=" d-block ms-auto fs-3 btn px-2 py-0 mb-0 bg-secondary"
+            className=" d-block ms-auto fs-3 btn px-2 py-0 mb-0 bg-light"
           >
             x
           </button>
