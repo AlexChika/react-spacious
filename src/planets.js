@@ -22,13 +22,20 @@ function ball(x) {
   )`,
   };
 }
-const Planets = () => {
+const Planets = ({ setDis }) => {
   return (
     <Row className=" my-5 planets g-0">
       {planets.map((planet) => {
         const { name, pop, id } = planet;
         return (
-          <Col data-id={id} className="mb-3 cards" key={id} sm={6} md={4}>
+          <Col
+            onClick={() => setDis(true)}
+            data-id={id}
+            className="mb-3 cards"
+            key={id}
+            sm={6}
+            md={4}
+          >
             <div style={style} className="pt-3 pb-1 ps-2">
               <div className="circ " style={ball(x())}></div>
               <p className="m-0 title">

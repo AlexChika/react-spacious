@@ -10,22 +10,14 @@ const App = () => {
   const [display, setDis] = useState(false);
   const showP = () => {
     selectX(true);
-    const side = document.querySelector(".side");
-    side.style.display = "none";
+    setDis(false);
   };
   const showC = () => {
     selectX(false);
-    const side = document.querySelector(".side");
-    side.style.display = "none";
+    setDis(false);
   };
   const close = () => {
-    const side = document.querySelector(".side");
-    side.style.display = "none";
-    if (side.style.display === "none") {
-      setDis(false);
-    } else {
-      setDis(true);
-    }
+    setDis(false);
   };
   return (
     <Container className=" g-0">
@@ -40,10 +32,12 @@ const App = () => {
       </div>
       <Container className="d-flex g-0">
         <div className={`${display ? "col-7 col-md-8" : "width"} `}>
-          {select ? <Planets /> : ""}
-          {select ? "" : <Characters />}
+          {select ? <Planets setDis={setDis} /> : ""}
+          {select ? "" : <Characters setDis={setDis} />}
         </div>
-        <div className={`side col-5 col-md-4 bg-white`}>
+        <div
+          className={`side ${display ? "" : "hide"} col-5 col-md-4 bg-white`}
+        >
           <button
             onClick={close}
             className=" d-block ms-auto fs-3 btn px-2 py-0 mb-0 bg-light"

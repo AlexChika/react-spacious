@@ -16,8 +16,6 @@ const Sidepla = () => {
           const id = card.dataset.id;
           const title = card.querySelector(".title").textContent;
           const pop = card.querySelector(".pop").textContent;
-          const side = document.querySelector(".side");
-          side.style.display = "block";
           setT(title);
           setP(pop);
           setI(id);
@@ -28,7 +26,7 @@ const Sidepla = () => {
   return (
     <>
       <div>
-        <h4 className="text-center fw-bolder">{title}</h4>
+        <h4 className="text-center fw-bolder ">{title}</h4>
         <p className="cr text-justify">{plandesc[id]}</p>
         <div>
           <p className="mb-0">population</p>
@@ -38,7 +36,7 @@ const Sidepla = () => {
           <p className="mb-0">Characters</p>
           <button className="bg-light btn">+</button>
         </div>
-        <div className="d-flex align-items-center mb-3">
+        <div className="d-flex flex-sm-row flex-column align-items-sm-center mb-3">
           <img
             style={{ height: "4em", width: "4em" }}
             src={people[index()].url}
@@ -49,7 +47,7 @@ const Sidepla = () => {
             <p className="mb-0 cr">{people[index()].Friends} friends</p>
           </div>
         </div>
-        <div className="d-flex align-items-center mb-3">
+        <div className="d-flex flex-sm-row flex-column align-items-sm-center mb-3">
           <img
             style={{ height: "4em", width: "4em" }}
             src={people[index()].url}
@@ -60,7 +58,7 @@ const Sidepla = () => {
             <p className="mb-0 cr">{people[index()].Friends} friends</p>
           </div>
         </div>
-        <div className="d-flex align-items-center mb-3">
+        <div className="d-flex flex-sm-row flex-column align-items-sm-center mb-3">
           <img
             style={{ height: "4em", width: "4em" }}
             src={people[index()].url}
@@ -71,7 +69,7 @@ const Sidepla = () => {
             <p className="mb-0 cr">{people[index()].Friends} friends</p>
           </div>
         </div>
-        <div className="d-flex align-items-center">
+        <div className="d-flex flex-sm-row flex-column align-items-sm-center">
           <img
             style={{ height: "4em", width: "4em" }}
             src={people[index()].url}

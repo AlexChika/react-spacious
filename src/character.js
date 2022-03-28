@@ -2,13 +2,20 @@ import React from "react";
 import { Row, Col } from "react-bootstrap";
 import { people } from "./data";
 import { style } from "./planets";
-const Character = () => {
+const Character = ({ setDis }) => {
   return (
     <Row className=" my-5 planets g-0">
       {people.map((person) => {
         const { name, Friends, url, id } = person;
         return (
-          <Col data-id={id} className="mb-3 cards" key={id} sm={6} md={4}>
+          <Col
+            onClick={() => setDis(true)}
+            data-id={id}
+            className="mb-3 cards"
+            key={id}
+            sm={6}
+            md={4}
+          >
             <div style={{ ...style, width: "80%" }} className=" pb-1">
               <div style={{ height: "7em" }}>
                 <img src={url} alt={name} />

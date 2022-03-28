@@ -18,8 +18,6 @@ const Sidecha = () => {
           const title = card.querySelector(".title").textContent;
           const pop = card.querySelector(".pop").textContent;
           const url = card.querySelector("img").getAttribute("src");
-          const side = document.querySelector(".side");
-          side.style.display = "block";
           setT(title);
           setP(pop);
           setU(url);
@@ -46,7 +44,7 @@ const Sidecha = () => {
         </article>
 
         <p className="mb-0 text-secondary">Friends</p>
-        <div className="d-flex align-items-center mb-3">
+        <div className="d-flex flex-sm-row flex-column align-items-sm-center justify-content-center mb-3">
           <img
             style={{ height: "4em", width: "4em" }}
             src={people[index()].url}
@@ -57,7 +55,7 @@ const Sidecha = () => {
             <p className="mb-0 cr">{chadesc[index()]}</p>
           </div>
         </div>
-        <div className="d-flex align-items-center mb-3">
+        <div className="d-flex flex-sm-row flex-column align-items-sm-center justify-content-center mb-3">
           <img
             style={{ height: "4em", width: "4em" }}
             src={people[index()].url}
@@ -68,7 +66,7 @@ const Sidecha = () => {
             <p className="mb-0 cr">{chadesc[index()]}</p>
           </div>
         </div>
-        <div className="d-flex align-items-center mb-3">
+        <div className="d-flex flex-sm-row flex-column align-items-sm-center justify-content-center mb-3">
           <img
             style={{ height: "4em", width: "4em" }}
             src={people[index()].url}
@@ -79,7 +77,7 @@ const Sidecha = () => {
             <p className="mb-0 cr">{chadesc[index()]}</p>
           </div>
         </div>
-        <div className="d-flex align-items-center">
+        <div className="d-flex flex-sm-row flex-column align-items-sm-center justify-content-center">
           <img
             style={{ height: "4em", width: "4em" }}
             src={people[index()].url}
