@@ -44,7 +44,7 @@ const Sidecha = () => {
         </article>
 
         <p className="mb-0 text-secondary">Friends</p>
-        <div className="d-flex flex-sm-row flex-column align-items-sm-center justify-content-center mb-3">
+        <div className="d-flex  flex-sm-row flex-column mb-3">
           <img
             style={{ height: "4em", width: "4em" }}
             src={people[index()].url}
@@ -55,7 +55,7 @@ const Sidecha = () => {
             <p className="mb-0 cr">{chadesc[index()]}</p>
           </div>
         </div>
-        <div className="d-flex flex-sm-row flex-column align-items-sm-center justify-content-center mb-3">
+        <div className="d-flex  flex-sm-row flex-column mb-3">
           <img
             style={{ height: "4em", width: "4em" }}
             src={people[index()].url}
@@ -66,7 +66,7 @@ const Sidecha = () => {
             <p className="mb-0 cr">{chadesc[index()]}</p>
           </div>
         </div>
-        <div className="d-flex flex-sm-row flex-column align-items-sm-center justify-content-center mb-3">
+        <div className="d-flex  flex-sm-row flex-column mb-3">
           <img
             style={{ height: "4em", width: "4em" }}
             src={people[index()].url}
@@ -77,7 +77,7 @@ const Sidecha = () => {
             <p className="mb-0 cr">{chadesc[index()]}</p>
           </div>
         </div>
-        <div className="d-flex flex-sm-row flex-column align-items-sm-center justify-content-center">
+        <div className="d-flex  flex-sm-row flex-column">
           <img
             style={{ height: "4em", width: "4em" }}
             src={people[index()].url}

@@ -26,7 +26,7 @@ const Sidepla = () => {
   return (
     <>
       <div>
-        <h4 className="text-center fw-bolder ">{title}</h4>
+        <h4 className="text-center fw-bolder hide-550px">{title}</h4>
         <p className="cr text-justify">{plandesc[id]}</p>
         <div>
           <p className="mb-0">population</p>
@@ -36,7 +36,7 @@ const Sidepla = () => {
           <p className="mb-0">Characters</p>
           <button className="bg-light btn">+</button>
         </div>
-        <div className="d-flex flex-sm-row flex-column align-items-sm-center justify-content-center  mb-3">
+        <div className="d-flex flex-sm-row flex-column  mb-3">
           <img
             style={{ height: "4em", width: "4em" }}
             src={people[index()].url}
@@ -47,7 +47,7 @@ const Sidepla = () => {
             <p className="mb-0 cr">{people[index()].Friends} friends</p>
           </div>
         </div>
-        <div className="d-flex flex-sm-row flex-column align-items-sm-center justify-content-center  mb-3">
+        <div className="d-flex flex-sm-row flex-column  mb-3">
           <img
             style={{ height: "4em", width: "4em" }}
             src={people[index()].url}
@@ -58,7 +58,7 @@ const Sidepla = () => {
             <p className="mb-0 cr">{people[index()].Friends} friends</p>
           </div>
         </div>
-        <div className="d-flex flex-sm-row flex-column align-items-sm-center justify-content-center  mb-3">
+        <div className="d-flex flex-sm-row flex-column  mb-3">
           <img
             style={{ height: "4em", width: "4em" }}
             src={people[index()].url}
@@ -69,7 +69,7 @@ const Sidepla = () => {
             <p className="mb-0 cr">{people[index()].Friends} friends</p>
           </div>
         </div>
-        <div className="d-flex flex-sm-row flex-column align-items-sm-center justify-content-center ">
+        <div className="d-flex flex-sm-row flex-column ">
           <img
             style={{ height: "4em", width: "4em" }}
             src={people[index()].url}
