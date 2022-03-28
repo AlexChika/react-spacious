@@ -6,11 +6,8 @@ img {
   height: 100%;
   object-fit: center;
 }
-.hello {
-  text-decoration: line-through;
-}
-.border {
-  border: 3px solid red;
+.d-flex {
+  display: flex !important;
 }
 .color {
   font-weight: 900;
@@ -82,7 +79,6 @@ img {
 .side {
   border-radius: 20px;
   padding: 10px;
-  display: none;
 }
 .width {
   width: 100% !important;
@@ -92,4 +88,13 @@ img {
   font-size: 0.8em !important;
   opacity: 0.6 !important;
   /* line-height: 1em !important; */
+}
+.hide {
+  display: none !important;
+}
+@media screen and (max-width: 550px) {
+  .hide-550px {
+    /* display: none !important; */
+    background-color: yellow !important;
+  }
 }
