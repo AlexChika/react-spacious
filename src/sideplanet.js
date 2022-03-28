@@ -36,7 +36,7 @@ const Sidepla = () => {
           <p className="mb-0">Characters</p>
           <button className="bg-light btn">+</button>
         </div>
-        <div className="d-flex flex-sm-row flex-column align-items-sm-center mb-3">
+        <div className="d-flex flex-sm-row flex-column align-items-sm-center justify-content-center  mb-3">
           <img
             style={{ height: "4em", width: "4em" }}
             src={people[index()].url}
@@ -47,7 +47,7 @@ const Sidepla = () => {
             <p className="mb-0 cr">{people[index()].Friends} friends</p>
           </div>
         </div>
-        <div className="d-flex flex-sm-row flex-column align-items-sm-center mb-3">
+        <div className="d-flex flex-sm-row flex-column align-items-sm-center justify-content-center  mb-3">
           <img
             style={{ height: "4em", width: "4em" }}
             src={people[index()].url}
@@ -58,7 +58,7 @@ const Sidepla = () => {
             <p className="mb-0 cr">{people[index()].Friends} friends</p>
           </div>
         </div>
-        <div className="d-flex flex-sm-row flex-column align-items-sm-center mb-3">
+        <div className="d-flex flex-sm-row flex-column align-items-sm-center justify-content-center  mb-3">
           <img
             style={{ height: "4em", width: "4em" }}
             src={people[index()].url}
@@ -69,7 +69,7 @@ const Sidepla = () => {
             <p className="mb-0 cr">{people[index()].Friends} friends</p>
           </div>
         </div>
-        <div className="d-flex flex-sm-row flex-column align-items-sm-center">
+        <div className="d-flex flex-sm-row flex-column align-items-sm-center justify-content-center ">
           <img
             style={{ height: "4em", width: "4em" }}
             src={people[index()].url}

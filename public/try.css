@@ -6,11 +6,8 @@ img {
   height: 100%;
   object-fit: center;
 }
-.hello {
-  text-decoration: line-through;
-}
-.border {
-  border: 3px solid red;
+.d-flex {
+  display: flex !important;
 }
 .color {
   font-weight: 900;
